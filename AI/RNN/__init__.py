@@ -58,6 +58,7 @@ class LSTM(torch.nn.Module):
         output = self.linear(output)
         return output
     
+    
 class RNN(torch.nn.Module):
     def __init__(self, input_size, hidden_size, num_layers, num_outputs, device=torch.device('cpu')):
         super(RNN, self).__init__()
