@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <style>
+            .frog {
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                height: 130px;
+            }
+            .frog_head {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            .eye_white {
+                background-color: white;
+                height: 20px;
+                width: 25px;
+                border-radius: 50%;
+            }
+            .eye {
+                background-color: green;
+                height: 40px;
+                width: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /* border-radius: 50%; */
+                border-top-left-radius: 50%;
+                border-top-right-radius: 50%;
+            }
+            .frog_head_center {
+                background-color: green;
+                height: 25px;
+                width: 35px;
+                /* border-radius: 50%; */
+            }
+            .eye_ball {
+                background-color: black;
+                border-radius: 50%;
+                height: 10px;
+                width: 10px;
+                top: 4px;
+                left: 10px;
+                position: relative;
+            }
+            /* .frog_body_space {
+                display: flex;
+                justify-content: center;
+                background-color: green;
+                height: 50px;
+                width: 125px;
+            } */
+             .frog_body{
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 8%;
+                height: 80px;
+
+             }
+             .leg{
+                background-color: rgb(0, 109, 0);
+                height: 60px;
+                width: 35px;
+             }
+             .frog_left_leg{
+                border-top-left-radius: 50%;
+                border-top-right-radius: 40%;
+                border-bottom-left-radius: 25%;
+             }
+             .frog_right_leg{
+                border-top-right-radius: 50%;
+                border-top-left-radius: 40%;
+                border-bottom-right-radius: 25%;
+             }
+             
+             .frog_body_center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: green;
+                height: 80px;
+                width: 125px; 
+             }
+             .frog_body_stomach {
+                background-color: rgb(3, 167, 3);
+                width: 100px;
+                height: 60px;
+                border-radius: 25%;
+             }
+             .frog_body_bottom {
+                height: 10px;
+                display: flex;
+                gap: 0px;
+                justify-content: center;
+             }
+             .feet{
+                background-color: rgb(0, 109, 0);
+                width: 35px;
+             }
+             .frog_left_feet {
+                border-top-left-radius: 30%;
+                border-bottom-left-radius: 50%;
+
+             }
+             .frog_right_feet {
+                border-top-right-radius: 30%;
+                border-bottom-right-radius: 50%;
+             }
+             .frog_body_bottom_center {
+                background-color: green;
+                width: 125px;
+             }
+        </style>
+    </head>
+    <body>
+        <div class="frog">
+            <div class="frog_head">
+                <div class="eye eye_left">
+                    <div class="eye_white eye_white_left">
+                        <div class="eye_ball"></div>
+
+                    </div>
+                </div>
+                <div class="frog_head_center"></div>
+                <div class="eye eye_right">
+                    <div class="eye_white eye_white_right">
+                        <div class="eye_ball"></div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="frog_body_space"></div>
+            <div class="frog_body">
+                <div class="frog_left_leg leg"></div>
+                <div class="frog_body_center">
+                    <div class="frog_body_stomach"></div>
+                </div>
+                <div class="frog_right_leg leg"></div>
+            </div>
+            <div class="frog_body_bottom">
+                <div class="frog_left_feet feet"></div>
+                <div class="frog_body_bottom_center"></div>
+                <div class="frog_right_feet feet"></div>
+            </div>
+        </div>
+    </body>
+</html>
