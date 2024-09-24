@@ -1,0 +1,115 @@
+<!-- animation: https://www.w3schools.com/css/css3_animations.asp -->
+<html>
+    <head>
+        <title>abstract</title>
+        <style>
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            @keyframes example {
+                from {background-color: red;}
+                to {background-color: yellow;}
+            }
+
+            @keyframes abstract_top_left {
+                0% {
+                    border-top-left-radius: 0px 55px;
+                    border-top-right-radius: 55px 0px;
+                    border-bottom-left-radius: 100px 0px;
+                    border-bottom-right-radius: 0px 100px;
+                    background-color: rgba(25, 1, 1, 0.928);
+                    transform: rotate(90deg);
+                }
+                50% {
+                    transform: rotate(0);
+                    border-top-left-radius: 55px 0px;
+                    border-top-right-radius: 0x 55px;
+                    border-bottom-left-radius: 0px 100px;
+                    border-bottom-right-radius: 100px 0px;
+                }
+                100% {
+                    background-color: rgb(25, 1, 1);
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes movments {
+                0% {
+                    top: -10px;
+                    left: 0px;
+                }
+                50% {
+                    top: 10px;
+                    left: 10px;
+                }
+                100% {
+                    top: 0px;
+                    left: -10px;
+                }
+            }
+
+            .abstract{
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(25, 1, 1, 0.928);
+                justify-content: flex-start;
+                width: 300px;
+                height: 300px;
+                border: 0px;
+                margin: 0px;
+                padding: 0px;
+                border-radius: 45%;
+                align-items: center;
+                animation-name: abstract_top_left;
+                animation-duration: 4s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+            .abstract_top {
+                background-color: blue;
+                width: 100px;
+                height: 100px;
+                border-radius: 45%;
+                top: 40px;
+                position: relative;
+                animation: movments 6s linear -2s infinite alternate;
+                animation-delay: -3s;
+
+            }
+            .abstract_center {
+                background-color: red;
+                width: 100px;
+                height: 100px;
+                border-radius: 45%;
+                top: 40px;
+                position: relative;
+                animation: movments 5s linear 2s infinite alternate;
+                animation-delay: 3s;
+            }
+            .abstract_bottom {
+                background-color: green;
+                width: 100px;
+                height: 100px;
+                border-radius: 45%;
+                top: 40px;
+                position: relative;
+                animation: movments 3s linear 1s infinite alternate;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="abstract">
+                <div class="abstract_top"></div>
+                <div class="abstract_center"></div>
+                <div class="abstract_bottom"></div>
+            </div>
+        </div>
+    </body>
+</html>
