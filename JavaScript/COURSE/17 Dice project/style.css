@@ -1,0 +1,49 @@
+body {
+    background-color: grey;
+    color: aquamarine;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-family: "Pacifico", cursive;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dices-container {
+    display: flex;
+    justify-content: center;
+}
+
+.div_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dice {
+    background-color: darkred;
+    display: grid;
+    grid-template-columns: 33px 33px 33px;
+    grid-template-rows: 33px 33px 33px;
+    gap: 7px;
+    padding: 10px;
+    margin: 10px;
+    border: 10px;
+    border-radius: 20%;
+    position: relative;
+}
+
+.dot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot_show{
+    background-color: black;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+    width: 23px;
+    height: 23px;
+}
